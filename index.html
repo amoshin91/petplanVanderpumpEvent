@@ -63,9 +63,13 @@
             padding: 20px;
             text-align: center;
             width: 250px;
-            cursor: pointer;
             color: #fff;
             font-size: 1.3em;
+         }
+
+         #confirm button:active {
+            background-color: #ffada8;
+            width: 230px;
          }
 
          #confirm .message {
@@ -74,16 +78,13 @@
          }
 
          #form_container {
-          width: 500px;
-          margin: auto;
           position: absolute;
             bottom: 40px;
             left: 0px;
             right: 0px;
+          width: 500px;
+          margin: auto;
           text-align: center;
-          /*padding: 80px 40px 70px;
-          background-color: #000b;
-          border-radius: 15px;*/
          }
 
          #name, #pets_name, #email {
@@ -101,15 +102,23 @@
          }
 
          #submit {
+         }
+
+        #form_container form button {
+          background-color: #e03e35;
+          color: #fff;
           width: 300px;
           padding: 20px;
           margin-top: 10px;
           border-radius: 5px;
           border: 0px
-         }
+        }
 
-        #form_container form button {
-          background-color: #e03e35;
+        #form_container form button:active {
+          background-color: #ffada8;
+          width: 280px;
+          height: 61px;
+          margin: 11px 0 2px;
           color: #fff;
         }
 
