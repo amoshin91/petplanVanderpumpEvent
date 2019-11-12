@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+      </script>
+
+      <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&display=swap" rel="stylesheet">
+
+      <script>
+         function functionAlert(msg, myYes) {
+            var confirmBox = $("#confirm");
+            confirmBox.find(".message").text(msg);
+            confirmBox.find(".yes").unbind().click(function() {
+              confirmBox.hide();
+              location.reload();
+            });
+            confirmBox.find(".yes").click(myYes);
+            confirmBox.show();
+         }
+      </script>
+
+      <style>
+        body {
+          background: url("https://wallpaperplay.com/walls/full/a/a/4/1529.jpg") no-repeat fixed center;
+          background-size: cover;
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+         #confirm {
+            display: none;
+            background-color: #dedede;
+            border: 3px solid #bbb;
+            border-radius: 10px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 300px;
+            z-index: 2;
+            width: 480px;
+            height: 370px;
+            margin: auto;
+            padding: 15px 20px;
+            box-sizing: border-box;
+            text-align: center;
+         }
+
+         #confirm h3 {
+          font-size: 2em;
+          margin: 90px 0 10px;
+         }
+
+         #confirm button {
+            background-color: #000;
+            display: inline-block;
+            border-radius: 5px;
+            border: 1px solid #aaa;
+            padding: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+            width: 100px;
+            cursor: pointer;
+            color: #fff;
+         }
+
+         #confirm .message {
+            text-align: center;
+            margin-bottom: 20px;
+         }
+
+         #form_container {
+          width: 400px;
+          margin: 300px auto;
+          text-align: center;
+          padding: 80px 40px 70px;
+          background-color: #000b;
+          border-radius: 15px;
+         }
+
+         #name, #pets_name, #email {
+          width: 300px;
+          height: 40px;
+          padding-left: 10px;
+          margin-bottom: 10px;
+          border-radius: 5px;
+          border: 0px;
+          font-size: 1em;
+         }
+
+         #submit {
+          width: 150px;
+          padding: 10px;
+          margin-top: 20px;
+          border-radius: 5px;
+          border: 0px
+         }
+
+      </style>
+
+  </head>
+
+  <body>
+
+    <div id="form_container">
+      <form name="submit-to-google-sheet">
+        <input name="name" type="name" placeholder="Name (First, Last)" id="name" required>
+        <input name="pets_name" type="pets_name" placeholder="Pet's Name" id="pets_name" required>
+        <input name="email" type="email" placeholder="Email" id="email" required>
+        
+        <button type="submit" id="submit" style="font-size: 1em;">Send</button>
+      </form>
+    </div>
+
+
+      <div id = "confirm">
+        <div class = "message">
+          <h3>
+            Thank you!
+          </h3>
+          <p>
+            You should hear back from us soon!
+          </p>
+        </div>
+        <button class = "yes">OK</button>
+      </div>
+
+    <script>
+      const scriptURL = 'https://script.google.com/a/d3-nyc.com/macros/s/AKfycbyDvfBQJQDD5iow-kSLncs6DjftRfrYl1dtbZfj6O3ebAyCrAE/exec'
+      const form = document.forms['submit-to-google-sheet']
+
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => console.log('Success!', response))
+          .then(functionAlert())
+          .catch(error => console.error('Error!', error.message));
+      })
+    </script>
+
+  </body>
+</html>
