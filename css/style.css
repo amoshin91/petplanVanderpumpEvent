@@ -1,7 +1,7 @@
 body {
   background: url("../images/john-sessa-vanderpump-tim-hancock-luxenewslive-2s.jpg") no-repeat fixed center bottom;
   background-size: cover;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Hind', sans-serif;
 }
 
 hr {
@@ -44,19 +44,19 @@ hr {
     right: 0px;
   margin: auto;
   text-align: left;
-  width: 680px;
+  width: 720px;
   color: #fff;
 
 }
 
 #pre_form h2 {
-  margin: -10px;
+  margin: 0 0 -30px;
   font-size: 4em;
   font-weight: 600;
 }
 
 #pre_form h2:nth-child(2) {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 #pre_form h3 {
@@ -93,7 +93,7 @@ hr {
  }
 
 #form_container form button {
-  background-color: #e03e35;
+  background-color: #f519a1;
   color: #fff;
   width: 300px;
   padding: 20px;
@@ -103,7 +103,7 @@ hr {
 }
 
 #form_container form button:active {
-  background-color: #ffada8;
+  background-color: #f990d1;
   width: 280px;
   height: 61px;
   margin: 11px 0 2px;
@@ -130,18 +130,18 @@ hr {
  }
 
  #confirm h3 {
-  font-size: 3em;
-  margin: 30px 0 10px;
-  color: #ef7450;
+  font-size: 2em;
+  margin: 20px 0 10px;
+  color: #f519a1;
  }
 
  #confirm p {
-  font-size: 1.5em;
+  font-size: 1.4em;
   margin: 10px 0 35px;
  }
 
  #confirm button {
-    background-color: #e03e35;
+    background-color: #f519a1;
     display: inline-block;
     border: 0px;
     border-radius: 5px;
@@ -153,7 +153,7 @@ hr {
  }
 
  #confirm button:active {
-    background-color: #ffada8;
+    background-color: #f990d1;
     width: 230px;
  }
 
