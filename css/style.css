@@ -23,18 +23,26 @@ hr {
 
 #logo-container {
   margin: auto;
-  padding: 20px 0 10px;
-  flex: wrap;
+  padding: 20px 0 15px;
   background: #fff;
 }
 
 #logos {
-  width: 400px;
+  width: 100vw;
+  display: flex;
+}
+
+#vanderpump-logo, #petplan-logo {
+  height: 40px;
+  margin: auto;
 }
 
 #vanderpump-logo {
-  height: 40px;
   margin-left: 30px;
+}
+
+#petplan-logo {
+  margin-right: 30px;
 }
 
 #pre_form {
@@ -52,18 +60,18 @@ hr {
 #pre_form h2 {
   margin: 0 0 -30px;
   font-size: 4em;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 #pre_form h2:nth-child(2) {
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 
 #pre_form h3 {
   margin: 15px 0 0;
   width: 700px;
   font-size: 2em;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 /* FORM */
@@ -86,6 +94,9 @@ hr {
   border-radius: 5px;
   border: 0px;
   font-size: 1.3em;
+
+  font-family: 'Hind', sans-serif;
+  font-weight: 300;
  }
 
  #name, #pets_name {
@@ -99,7 +110,10 @@ hr {
   padding: 20px;
   margin-top: 10px;
   border-radius: 5px;
-  border: 0px
+  border: 0px;
+  
+  font-family: 'Hind', sans-serif;
+  font-weight: 300;
 }
 
 #form_container form button:active {
@@ -133,23 +147,28 @@ hr {
   font-size: 2em;
   margin: 20px 0 10px;
   color: #f519a1;
+  font-weight: 300;
  }
 
  #confirm p {
   font-size: 1.4em;
   margin: 10px 0 35px;
+  font-weight: 300;
  }
 
  #confirm button {
-    background-color: #f519a1;
-    display: inline-block;
-    border: 0px;
-    border-radius: 5px;
-    padding: 20px;
-    text-align: center;
-    width: 250px;
-    color: #fff;
-    font-size: 1.3em;
+  background-color: #f519a1;
+  display: inline-block;
+  border: 0px;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  width: 250px;
+  color: #fff;
+  font-size: 1.3em;
+  
+  font-family: 'Hind', sans-serif;
+  font-weight: 300;
  }
 
  #confirm button:active {
@@ -159,7 +178,8 @@ hr {
 
  #confirm .message {
     text-align: center;
-    margin-bottom: 20px;
+    margin: 0 auto 20px;
+    width: 450px;
  }
 
 
