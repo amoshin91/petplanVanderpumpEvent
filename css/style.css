@@ -118,8 +118,8 @@ hr {
 
 #form_container form button:active {
   background-color: #f990d1;
-  width: 280px;
-  height: 61px;
+  width: 294px;
+  height: 70px;
   margin: 11px 0 2px;
   color: #fff;
 }
@@ -169,11 +169,6 @@ hr {
   
   font-family: 'Hind', sans-serif;
   font-weight: 300;
- }
-
- #confirm button:active {
-    background-color: #f990d1;
-    width: 230px;
  }
 
  #confirm .message {
