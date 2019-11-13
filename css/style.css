@@ -2,6 +2,7 @@ body {
   background: url("../images/john-sessa-vanderpump-tim-hancock-luxenewslive-2s.jpg") no-repeat fixed center bottom;
   background-size: cover;
   font-family: 'Hind', sans-serif;
+  overflow: hidden;
 }
 
 hr {
