@@ -21,6 +21,22 @@ hr {
     left: 0;
 }
 
+#logo-container {
+  margin: auto;
+  padding: 20px 0 10px;
+  flex: wrap;
+  background: #fff;
+}
+
+#logos {
+  width: 400px;
+}
+
+#vanderpump-logo {
+  height: 40px;
+  margin-left: 30px;
+}
+
 #pre_form {
   position: absolute;
     bottom: 350px;
