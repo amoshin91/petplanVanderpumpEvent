@@ -46,12 +46,14 @@ hr {
   margin-right: 30px;
 }
 
+/* CONTENT */
+
 #pre_form {
-  position: absolute;
+  /*position: absolute;
     bottom: 350px;
     left: 0px;
-    right: 0px;
-  margin: auto;
+    right: 0px;*/
+  margin: 60% auto 0;
   text-align: left;
   width: 705px;
   color: #fff;
@@ -77,12 +79,12 @@ hr {
 /* FORM */
 
  #form_container {
-  position: absolute;
+  /*position: absolute;
     bottom: 40px;
     left: 0px;
-    right: 0px;
+    right: 0px;*/
   width: 500px;
-  margin: auto;
+  margin: 20px auto 0;
   text-align: center;
  }
 
